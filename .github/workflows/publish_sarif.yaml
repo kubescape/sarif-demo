@@ -1,9 +1,6 @@
 name: Kubescape scanning for misconfigurations
 on:
-  push:
-    paths:
-      - 'charts/**.yaml'
-      - 'charts/**.tpl'
+  push
 jobs:
   kubescape:
     runs-on: ubuntu-latest
